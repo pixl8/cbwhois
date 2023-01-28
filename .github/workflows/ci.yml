@@ -23,6 +23,23 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Run tests
+        uses: pixl8/github-action-box-test@v3
+        with:
+          boxjson_dir: /tests
+          test_dir: /tests
+          test_server_json: /tests/server.json
+          output_file: /tests/test-results.txt
+          verbose: false
+        env:
+          WHOIS_TEST_API_KEY: ${{ secrets.WHOIS_TEST_API_KEY }}
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v1
+        with:
+          name: test-results
+          path: tests/test-results.txt
+
       - name: Generate release version number
         if: "env.PUBLISH == 'true'"
         id: versiongen

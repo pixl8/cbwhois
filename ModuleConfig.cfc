@@ -9,5 +9,11 @@ component {
 	this.autoMapModels		 = true;
 	this.parseParentSettings = true;
 
-	function configure(){}
+	function configure(){
+		settings.defaultApiKey   = "";
+		settings.defaultFields   = "";
+		settings.defaultLanguage = "";
+		settings.defaultReferer  = "";
+		settings.defaultTimeout  = 2;
+	}
 }
