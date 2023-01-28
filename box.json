@@ -1,0 +1,21 @@
+{
+    "name":"Who.is IP Address lookup API with Coldbox module bindings",
+    "author":"Pixl8 Group",
+    "version":"$VERSION_NUMBER",
+    "location":"$DOWNLOAD_URL",
+    "slug":"cbwhois",
+    "type":"modules",
+    "homepage":"https://github.com/pixl8/cbwhois",
+    "documentation":"https://github.com/pixl8/cbwhois",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/pixl8/cbwhois"
+    },
+    "contributors":[
+        "Dominic Watson <watson.dominic@gmail.com>"
+    ],
+    "ignore":[
+        "**/.*",
+        "build"
+    ]
+}
